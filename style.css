@@ -1,3 +1,35 @@
-h1 {
-  color: red;
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  height: 50px;
+}
+
+.gruppenbild {
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.team-member {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+
 }

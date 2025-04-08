@@ -34,3 +34,9 @@ header {
   border-radius: 5px;
 
 }
+
+footer{
+  display: block;
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}

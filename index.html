@@ -1,36 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyntaxSchmiede</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyntaxSchmiede</title>
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
-  <header>
-    <img class="logo" src="Logoentwurf2.png" alt="SyntaxSchmiede">
-    <h1>SyntaxSchmiede</h1>
-  </header>
-  <main>
-    <img class="gruppenbild" src="Gruppenfoto.jpg" alt="SyntaxSchmiede">
-    <div class="team">
-      <div class="team-member">Christian Agyapong</div>
-      <div class="team-member">Melanie Kollinger</div>
-      <div class="team-member">Seray Cihan</div>
-      <div class="team-member">Lilli Storck</div>
-      <div class="team-member">David Starzec</div>
-    </div>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo-container">
+                <img class="logo" src="logo.png" alt="SyntaxSchmiede Logo" class="logo">
+                <span class="brand">SyntaxSchmiede</span>
+            </div>
+            <div>
+                <a href="#team" class="btn">Team</a>
+                <a href="#kontakt" class="btn">Kontakt</a>
+            </div>
+        </div>
+    </nav>
 
-    <footer>
-        <h3>Kontakt</h3>
-        <p>Senden Sie uns eine E-Mail</p>
-        <p><a href="mailto:syntax.schiede@gmail.com">syntax.schmiede@gmail.com</a></p>
+    <section class="hero">
+        <div class="code-particles" id="codeParticles"></div>
+        <div class="container hero-content">
+            <h1>Willkommen bei <span style="color: var(--secondary);">Syntax</span>Schmiede</h1>
+            <p>Wir schmieden Code zu perfekten Lösungen - zuverlässig, kreativ und präzise.</p>
+            <span style="color: var(--secondary);">&lt;/&gt;</span>
+            <div class="hammer-animation" style="font-size: 2rem; margin-top: 1rem;">🔨</div>
+            <div>
+                <a href="#about" class="btn hero-btn">Mehr erfahren</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="about">
+        <h2><span class="anvil-icon">⚒️</span>Über Uns</h2>
+        <p>Bei SyntaxSchmiede verbinden wir traditionelles Handwerk mit moderner Technologie. Wie ein Schmied am Amboss
+            formen wir Ihren Code mit Präzision und Leidenschaft zu robusten, eleganten Lösungen.</p>
+
+        <div class="code-block">
+            <pre>
+<span style="color: #c678dd;">function</span> <span style="color: #61afef;">codeSchmiede</span>(<span style="color: var(--secondary);">idee</span>) {
+    <span style="color: #c678dd;">const</span> <span style="color: var(--secondary);">plan</span> = <span style="color: #61afef;">analysieren</span>(idee);
+    <span style="color: #c678dd;">let</span> <span style="color: var(--secondary);">code</span> = <span style="color: #61afef;">schmieden</span>(plan);
+    
+    <span style="color: #c678dd;">while</span> (!<span style="color: #61afef;">istPerfekt</span>(code)) {
+        code = <span style="color: #61afef;">verbessern</span>(code);
+    }
+    
+    <span style="color: #c678dd;">return</span> code;
+}</pre>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2><span class="anvil-icon">🛠️</span>Unsere Dienstleistungen</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧩</div>
+                    <h3>Webentwicklung</h3>
+                    <p>Responsive Websites und Web-Anwendungen mit modernsten Technologien.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>App-Entwicklung</h3>
+                    <p>Native und Cross-Platform-Apps für alle Bedürfnisse.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Software Engineering</h3>
+                    <p>Maßgeschneiderte Softwarelösungen für komplexe Herausforderungen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="team">
+        <h2><span class="anvil-icon">👥</span>Unser Team</h2>
+        <div class="team-photo-container">
+            <img id="gruppenfoto" src="Gruppenfoto.jpeg" alt="Team SyntaxSchmiede" class="team-photo">
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Christian Agyapong</h3>
+
+            </div>
+            <div class="team-member">
+                <h3>Melanie Kollinger</h3>
+
+            </div>
+            <div class="team-member">
+                <h3>Seray Chan</h3>
+
+            </div>
+            <div class="team-member">
+                <h3>Lilli Storck</h3>
+
+            </div>
+            <div class="team-member">
+                <h3>David Starzec</h3>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <h2><span class="anvil-icon">✉️</span>Kontakt</h2>
+            <div class="contact-form">
+                <p>Senden Sie uns eine E-Mail:</p>
+                <p><a href="mailto:syntax.schmiede@gmail.com"
+                        style="color: var(--secondary); font-weight: bold;">syntax.schmiede@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SyntaxSchmiede. Alle Rechte vorbehalten.</p>
+            <div style="margin-top: 1rem;">
+                <span style="color: var(--secondary);">&lt;/&gt;</span>
+                <span class="hammer-animation" style="font-size: 1.5rem;">🔨</span>
+
+
+            </div>
+        </div>
     </footer>
-  </main>
 
+    <script defer src="homepage.js"></script>
 </body>
 
 </html>
